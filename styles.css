@@ -1,0 +1,98 @@
+
+:root {
+  --bg: #0b1220;
+  --card: #121a2b;
+  --text: #e8eefc;
+  --muted: #a9b4d0;
+  --accent: #7c9cff;
+  --border: rgba(255,255,255,.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(124,156,255,.25), transparent 60%),
+              radial-gradient(1200px 800px at 80% 40%, rgba(66, 255, 214, .12), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.container { max-width: 980px; margin: 0 auto; padding: 32px 16px 56px; }
+.header {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(18,26,43,.75);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;   /* elementos uno debajo del otro */
+  align-items: center;      /* centra horizontalmente */
+  justify-content: center;  /* centra verticalmente (si tiene altura) */
+  text-align: center;       /* centra el texto */
+}
+.header h1 { margin: 0 0 6px; font-size: 36px; }
+.header p { margin: 0 0 14px; color: var(--muted); }
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+.links a:hover { border-color: rgba(124,156,255,.5);}
+
+.section { margin-top: 26px; padding: 20px; border: 1px solid var(--border); border-radius: 18px; background: rgba(18,26,43,.55); }
+.section h2 { margin: 0 0 12px; }
+
+.tags span {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 6px 8px 0 0;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.card { padding: 16px; border-radius: 16px; border: 1px solid var(--border); background: rgba(11,18,32,.55); }
+.card h3 { margin: 0 0 8px; }
+.muted { color: var(--muted); }
+
+.cardLinks a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.cardLinks a:hover { text-decoration: underline; }
+
+.workMeta{
+  display:flex;
+  flex-direction: column;
+  gap:4px;
+  margin-bottom: 10px;
+}
+.dates{ white-space: nowrap; }
+
+.workList { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 18px; 
+}
+
+.workDescList {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.workDescList li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.footer { margin-top: 24px; color: var(--muted); text-align: center; }
