@@ -14,7 +14,7 @@ function Header() {
 function About() {
   return (
     <section className="section">
-      <h2>Sobre mí</h2>
+      <h2>About me</h2>
       <p>
         Junior .NET Backend Developer with hands-on experience working in SaaS production environments, supporting backend applications and collaborating closely with engineering teams across the Software Development Lifecycle (SDLC).
       </p>
@@ -49,23 +49,23 @@ function Projects() {
   const proyectos = [
     {
       title: "To-Do App",
-      desc: "Lista de tareas con agregar/eliminar y estado completado.",
+      desc: "A simple to-do list application that allows users to add, edit, and delete tasks.",
       tech: "React, CSS",
       demo: "",
       code: ""
     },
     {
-      title:"Portafolio Personal",
-      desc: "Sitio responsivo para practicar maquetación.",
+      title:"Personal portfolio",
+      desc: "Static portfolio website built with React, showcasing projects and experience.",
       tech: "HTML, CSS",
       demo: "",
-      code: ""
+      code: "https://github.com/joedazojim/portfolio"
     }
   ];
 
   return (
     <section className="section">
-      <h2>Proyectos</h2>
+      <h2>Proyects</h2>
       <div className="grid">
         {proyectos.map((p, i) => (
           <ProjectCard key={i} {...p} />
@@ -137,9 +137,9 @@ function Works() {
 function Contact() {
   return (
     <section className="section">
-      <h2>Contacto</h2>
+      <h2>Contact</h2>
       <p>joedazojim@gmail.com</p>
-      <p className="muted">También puedes escribirme por LinkedIn.</p>
+      <p className="muted">You can also reach me on LinkedIn.</p>
     </section>
   );
 }
