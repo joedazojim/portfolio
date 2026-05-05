@@ -39,7 +39,7 @@ function ProjectCard({ title, desc, tech, demo, code }) {
       <p className="muted"><strong>Tech:</strong> {tech}</p>
       <div className="cardLinks">
         {demo && <a href={demo} target="_blank">Demo</a>}
-        {code && <a href={code} target="_blank">Código</a>}
+        {code && <a href={code} target="_blank">Repository link</a>}
       </div>
     </article>
   );
